@@ -1,0 +1,1061 @@
+{
+  "protocol": "leave-one-dataset-out; train on other dataset(s), select blind to held-out metric labels",
+  "min_support": 1,
+  "min_trials": 1,
+  "folds": [
+    {
+      "train_datasets": [
+        "wine"
+      ],
+      "test_dataset": "breast_cancer",
+      "train_scenarios": 6,
+      "heldout_scenarios": 6,
+      "learned_edges": {
+        "group_config": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 0,
+            "robustness": 0,
+            "subgroup_gap": 1,
+            "confidence": 0
+          },
+          "suggested_tests": [
+            "subgroup_gap"
+          ]
+        },
+        "noise_config": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 0,
+            "robustness": 1,
+            "subgroup_gap": 0,
+            "confidence": 0
+          },
+          "suggested_tests": [
+            "robustness"
+          ]
+        },
+        "preprocess": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 0,
+            "robustness": 0,
+            "subgroup_gap": 0,
+            "confidence": 0
+          },
+          "suggested_tests": []
+        },
+        "threshold_config": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 0,
+            "robustness": 0,
+            "subgroup_gap": 0,
+            "confidence": 0
+          },
+          "suggested_tests": []
+        },
+        "untracked_pipeline_change": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 1,
+            "robustness": 1,
+            "subgroup_gap": 1,
+            "confidence": 1
+          },
+          "suggested_tests": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "weights": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 0,
+            "robustness": 1,
+            "subgroup_gap": 0,
+            "confidence": 1
+          },
+          "suggested_tests": [
+            "confidence",
+            "robustness"
+          ]
+        }
+      },
+      "policies": {
+        "full": {
+          "executed_tests": 24,
+          "full_tests": 24,
+          "test_reduction_fraction": 0.0,
+          "missed_observable_metric_events": 0,
+          "scenarios_with_misses": 0,
+          "decisions": [
+            {
+              "scenario": "noise_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "confidence_threshold_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "group_boundary_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "preprocessing_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence",
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "weight_perturbation",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "unknown_dependency",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            }
+          ]
+        },
+        "declared": {
+          "executed_tests": 11,
+          "full_tests": 24,
+          "test_reduction_fraction": 0.5417,
+          "missed_observable_metric_events": 4,
+          "scenarios_with_misses": 1,
+          "decisions": [
+            {
+              "scenario": "noise_scale_change",
+              "selected_tests": [
+                "robustness"
+              ],
+              "heldout_observable_changes": [
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "confidence_threshold_change",
+              "selected_tests": [
+                "confidence"
+              ],
+              "heldout_observable_changes": [
+                "confidence"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "group_boundary_change",
+              "selected_tests": [
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "preprocessing_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence",
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "weight_perturbation",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "unknown_dependency",
+              "selected_tests": [],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ]
+            }
+          ]
+        },
+        "fail_closed": {
+          "executed_tests": 15,
+          "full_tests": 24,
+          "test_reduction_fraction": 0.375,
+          "missed_observable_metric_events": 0,
+          "scenarios_with_misses": 0,
+          "decisions": [
+            {
+              "scenario": "noise_scale_change",
+              "selected_tests": [
+                "robustness"
+              ],
+              "heldout_observable_changes": [
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "confidence_threshold_change",
+              "selected_tests": [
+                "confidence"
+              ],
+              "heldout_observable_changes": [
+                "confidence"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "group_boundary_change",
+              "selected_tests": [
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "preprocessing_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence",
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "weight_perturbation",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "unknown_dependency",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            }
+          ]
+        },
+        "learned": {
+          "executed_tests": 15,
+          "full_tests": 24,
+          "test_reduction_fraction": 0.375,
+          "missed_observable_metric_events": 0,
+          "scenarios_with_misses": 0,
+          "decisions": [
+            {
+              "scenario": "noise_scale_change",
+              "selected_tests": [
+                "robustness"
+              ],
+              "heldout_observable_changes": [
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "confidence_threshold_change",
+              "selected_tests": [
+                "confidence"
+              ],
+              "heldout_observable_changes": [
+                "confidence"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "group_boundary_change",
+              "selected_tests": [
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "preprocessing_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence",
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "weight_perturbation",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "unknown_dependency",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            }
+          ]
+        },
+        "learned_guarded": {
+          "executed_tests": 15,
+          "full_tests": 24,
+          "test_reduction_fraction": 0.375,
+          "missed_observable_metric_events": 0,
+          "scenarios_with_misses": 0,
+          "decisions": [
+            {
+              "scenario": "noise_scale_change",
+              "selected_tests": [
+                "robustness"
+              ],
+              "heldout_observable_changes": [
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "confidence_threshold_change",
+              "selected_tests": [
+                "confidence"
+              ],
+              "heldout_observable_changes": [
+                "confidence"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "group_boundary_change",
+              "selected_tests": [
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "preprocessing_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence",
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "weight_perturbation",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "unknown_dependency",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "train_datasets": [
+        "breast_cancer"
+      ],
+      "test_dataset": "wine",
+      "train_scenarios": 6,
+      "heldout_scenarios": 6,
+      "learned_edges": {
+        "group_config": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 0,
+            "robustness": 0,
+            "subgroup_gap": 1,
+            "confidence": 0
+          },
+          "suggested_tests": [
+            "subgroup_gap"
+          ]
+        },
+        "noise_config": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 0,
+            "robustness": 1,
+            "subgroup_gap": 0,
+            "confidence": 0
+          },
+          "suggested_tests": [
+            "robustness"
+          ]
+        },
+        "preprocess": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 0,
+            "robustness": 1,
+            "subgroup_gap": 0,
+            "confidence": 1
+          },
+          "suggested_tests": [
+            "confidence",
+            "robustness"
+          ]
+        },
+        "threshold_config": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 0,
+            "robustness": 0,
+            "subgroup_gap": 0,
+            "confidence": 1
+          },
+          "suggested_tests": [
+            "confidence"
+          ]
+        },
+        "untracked_pipeline_change": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 1,
+            "robustness": 1,
+            "subgroup_gap": 1,
+            "confidence": 1
+          },
+          "suggested_tests": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "weights": {
+          "trials": 1,
+          "positive_counts": {
+            "accuracy": 1,
+            "robustness": 1,
+            "subgroup_gap": 1,
+            "confidence": 1
+          },
+          "suggested_tests": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        }
+      },
+      "policies": {
+        "full": {
+          "executed_tests": 24,
+          "full_tests": 24,
+          "test_reduction_fraction": 0.0,
+          "missed_observable_metric_events": 0,
+          "scenarios_with_misses": 0,
+          "decisions": [
+            {
+              "scenario": "noise_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "confidence_threshold_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [],
+              "misses": []
+            },
+            {
+              "scenario": "group_boundary_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "preprocessing_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [],
+              "misses": []
+            },
+            {
+              "scenario": "weight_perturbation",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence",
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "unknown_dependency",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            }
+          ]
+        },
+        "declared": {
+          "executed_tests": 11,
+          "full_tests": 24,
+          "test_reduction_fraction": 0.5417,
+          "missed_observable_metric_events": 4,
+          "scenarios_with_misses": 1,
+          "decisions": [
+            {
+              "scenario": "noise_scale_change",
+              "selected_tests": [
+                "robustness"
+              ],
+              "heldout_observable_changes": [
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "confidence_threshold_change",
+              "selected_tests": [
+                "confidence"
+              ],
+              "heldout_observable_changes": [],
+              "misses": []
+            },
+            {
+              "scenario": "group_boundary_change",
+              "selected_tests": [
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "preprocessing_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [],
+              "misses": []
+            },
+            {
+              "scenario": "weight_perturbation",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence",
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "unknown_dependency",
+              "selected_tests": [],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ]
+            }
+          ]
+        },
+        "fail_closed": {
+          "executed_tests": 15,
+          "full_tests": 24,
+          "test_reduction_fraction": 0.375,
+          "missed_observable_metric_events": 0,
+          "scenarios_with_misses": 0,
+          "decisions": [
+            {
+              "scenario": "noise_scale_change",
+              "selected_tests": [
+                "robustness"
+              ],
+              "heldout_observable_changes": [
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "confidence_threshold_change",
+              "selected_tests": [
+                "confidence"
+              ],
+              "heldout_observable_changes": [],
+              "misses": []
+            },
+            {
+              "scenario": "group_boundary_change",
+              "selected_tests": [
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "preprocessing_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [],
+              "misses": []
+            },
+            {
+              "scenario": "weight_perturbation",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence",
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "unknown_dependency",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            }
+          ]
+        },
+        "learned": {
+          "executed_tests": 15,
+          "full_tests": 24,
+          "test_reduction_fraction": 0.375,
+          "missed_observable_metric_events": 0,
+          "scenarios_with_misses": 0,
+          "decisions": [
+            {
+              "scenario": "noise_scale_change",
+              "selected_tests": [
+                "robustness"
+              ],
+              "heldout_observable_changes": [
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "confidence_threshold_change",
+              "selected_tests": [
+                "confidence"
+              ],
+              "heldout_observable_changes": [],
+              "misses": []
+            },
+            {
+              "scenario": "group_boundary_change",
+              "selected_tests": [
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "preprocessing_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [],
+              "misses": []
+            },
+            {
+              "scenario": "weight_perturbation",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence",
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "unknown_dependency",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            }
+          ]
+        },
+        "learned_guarded": {
+          "executed_tests": 15,
+          "full_tests": 24,
+          "test_reduction_fraction": 0.375,
+          "missed_observable_metric_events": 0,
+          "scenarios_with_misses": 0,
+          "decisions": [
+            {
+              "scenario": "noise_scale_change",
+              "selected_tests": [
+                "robustness"
+              ],
+              "heldout_observable_changes": [
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "confidence_threshold_change",
+              "selected_tests": [
+                "confidence"
+              ],
+              "heldout_observable_changes": [],
+              "misses": []
+            },
+            {
+              "scenario": "group_boundary_change",
+              "selected_tests": [
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "subgroup_gap"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "preprocessing_scale_change",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [],
+              "misses": []
+            },
+            {
+              "scenario": "weight_perturbation",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "confidence",
+                "robustness"
+              ],
+              "misses": []
+            },
+            {
+              "scenario": "unknown_dependency",
+              "selected_tests": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "heldout_observable_changes": [
+                "accuracy",
+                "confidence",
+                "robustness",
+                "subgroup_gap"
+              ],
+              "misses": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "full": {
+      "executed_tests": 48,
+      "full_tests": 48,
+      "test_reduction_fraction": 0.0,
+      "missed_observable_metric_events": 0,
+      "scenarios_with_misses": 0
+    },
+    "declared": {
+      "executed_tests": 22,
+      "full_tests": 48,
+      "test_reduction_fraction": 0.5417,
+      "missed_observable_metric_events": 8,
+      "scenarios_with_misses": 2
+    },
+    "fail_closed": {
+      "executed_tests": 30,
+      "full_tests": 48,
+      "test_reduction_fraction": 0.375,
+      "missed_observable_metric_events": 0,
+      "scenarios_with_misses": 0
+    },
+    "learned": {
+      "executed_tests": 30,
+      "full_tests": 48,
+      "test_reduction_fraction": 0.375,
+      "missed_observable_metric_events": 0,
+      "scenarios_with_misses": 0
+    },
+    "learned_guarded": {
+      "executed_tests": 30,
+      "full_tests": 48,
+      "test_reduction_fraction": 0.375,
+      "missed_observable_metric_events": 0,
+      "scenarios_with_misses": 0
+    }
+  },
+  "limitations": [
+    "Only two datasets and six mutation types: tiny exploratory pilot with reused scenario labels.",
+    "The same mutation recipes occur in both datasets; this is not unseen-mutation generalization.",
+    "Observed metric changes are not a security, fairness, or privacy validity oracle.",
+    "Single-component co-occurrence is correlation, not causal identification or a guarantee.",
+    "All full-test outcomes were precomputed for retrospective scoring; selection cannot access held-out outcome labels.",
+    "No claimed wall-clock performance or statistical robustness guarantees."
+  ],
+  "source_sha256": "e58d24ae0b98fc289b2ed260e5813794f1d96c7cae5b993f49666cdaafcb33c8"
+}

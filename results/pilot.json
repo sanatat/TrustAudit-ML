@@ -1,0 +1,260 @@
+{
+  "project": "TrustAudit-ML",
+  "seed": 42,
+  "software": {
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5",
+    "scikit_learn": "1.8.0"
+  },
+  "datasets": {
+    "breast_cancer": {
+      "train_samples": 426,
+      "test_samples": 143,
+      "model_training_seconds": 1.06986,
+      "all_tests_wall_seconds": 0.00151,
+      "metrics": {
+        "accuracy": 0.97203,
+        "robustness": 0.97203,
+        "subgroup_gap": 0.05556,
+        "confidence": 0.96503
+      }
+    },
+    "wine": {
+      "train_samples": 133,
+      "test_samples": 45,
+      "model_training_seconds": 0.02349,
+      "all_tests_wall_seconds": 0.00063,
+      "metrics": {
+        "accuracy": 0.97778,
+        "robustness": 0.97778,
+        "subgroup_gap": 0.04348,
+        "confidence": 0.95556
+      }
+    }
+  },
+  "artifact_hashes": {
+    "breast_cancer": {
+      "train_data_sha256": "8132c0e10fd4ee5ad3efe39d0552274c801c9dc76fda5430b8abfd946a821e20",
+      "test_data_sha256": "d928017b3b20361805a27d8f7bca6b5985b3afe907e427d5732bbf8486ca67cd",
+      "weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00"
+    },
+    "wine": {
+      "train_data_sha256": "59fcb0d5d450ab505e327dc6f68b687ea01f3c23431e6a8e4b95531be6b00d81",
+      "test_data_sha256": "2800c672a34cff67f09f816389cbd1012e288b49f47d32c37b694570bd30f95b",
+      "weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6"
+    }
+  },
+  "declared_dependencies": {
+    "accuracy": [
+      "data",
+      "preprocess",
+      "weights"
+    ],
+    "robustness": [
+      "data",
+      "noise_config",
+      "preprocess",
+      "weights"
+    ],
+    "subgroup_gap": [
+      "data",
+      "group_config",
+      "preprocess",
+      "weights"
+    ],
+    "confidence": [
+      "data",
+      "preprocess",
+      "threshold_config",
+      "weights"
+    ]
+  },
+  "scenarios": [
+    {
+      "scenario": "documentation_only",
+      "changed_components": [
+        "documentation"
+      ],
+      "required_tests_oracle": [],
+      "selected_tests": [],
+      "missed_required_tests": [],
+      "full_test_units": 4,
+      "selected_test_units": 0,
+      "naive_hash_test_units": 4,
+      "work_reduction_vs_full": 1.0,
+      "undetected_invalidations": 0,
+      "simulated_full_cost_seconds": 4.0,
+      "simulated_selected_cost_seconds": 0.0
+    },
+    {
+      "scenario": "noise_config_change",
+      "changed_components": [
+        "noise_config"
+      ],
+      "required_tests_oracle": [
+        "robustness"
+      ],
+      "selected_tests": [
+        "robustness"
+      ],
+      "missed_required_tests": [],
+      "full_test_units": 4,
+      "selected_test_units": 1,
+      "naive_hash_test_units": 4,
+      "work_reduction_vs_full": 0.75,
+      "undetected_invalidations": 0,
+      "simulated_full_cost_seconds": 4.0,
+      "simulated_selected_cost_seconds": 1.0
+    },
+    {
+      "scenario": "group_definition_change",
+      "changed_components": [
+        "group_config"
+      ],
+      "required_tests_oracle": [
+        "subgroup_gap"
+      ],
+      "selected_tests": [
+        "subgroup_gap"
+      ],
+      "missed_required_tests": [],
+      "full_test_units": 4,
+      "selected_test_units": 1,
+      "naive_hash_test_units": 4,
+      "work_reduction_vs_full": 0.75,
+      "undetected_invalidations": 0,
+      "simulated_full_cost_seconds": 4.0,
+      "simulated_selected_cost_seconds": 1.0
+    },
+    {
+      "scenario": "threshold_change",
+      "changed_components": [
+        "threshold_config"
+      ],
+      "required_tests_oracle": [
+        "confidence"
+      ],
+      "selected_tests": [
+        "confidence"
+      ],
+      "missed_required_tests": [],
+      "full_test_units": 4,
+      "selected_test_units": 1,
+      "naive_hash_test_units": 4,
+      "work_reduction_vs_full": 0.75,
+      "undetected_invalidations": 0,
+      "simulated_full_cost_seconds": 4.0,
+      "simulated_selected_cost_seconds": 1.0
+    },
+    {
+      "scenario": "model_update",
+      "changed_components": [
+        "weights"
+      ],
+      "required_tests_oracle": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "missed_required_tests": [],
+      "full_test_units": 4,
+      "selected_test_units": 4,
+      "naive_hash_test_units": 4,
+      "work_reduction_vs_full": 0.0,
+      "undetected_invalidations": 0,
+      "simulated_full_cost_seconds": 4.0,
+      "simulated_selected_cost_seconds": 4.0
+    },
+    {
+      "scenario": "preprocessing_update",
+      "changed_components": [
+        "preprocess"
+      ],
+      "required_tests_oracle": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "missed_required_tests": [],
+      "full_test_units": 4,
+      "selected_test_units": 4,
+      "naive_hash_test_units": 4,
+      "work_reduction_vs_full": 0.0,
+      "undetected_invalidations": 0,
+      "simulated_full_cost_seconds": 4.0,
+      "simulated_selected_cost_seconds": 4.0
+    },
+    {
+      "scenario": "combined_config_change",
+      "changed_components": [
+        "noise_config",
+        "threshold_config"
+      ],
+      "required_tests_oracle": [
+        "confidence",
+        "robustness"
+      ],
+      "selected_tests": [
+        "confidence",
+        "robustness"
+      ],
+      "missed_required_tests": [],
+      "full_test_units": 4,
+      "selected_test_units": 2,
+      "naive_hash_test_units": 4,
+      "work_reduction_vs_full": 0.5,
+      "undetected_invalidations": 0,
+      "simulated_full_cost_seconds": 4.0,
+      "simulated_selected_cost_seconds": 2.0
+    },
+    {
+      "scenario": "hidden_dependency",
+      "changed_components": [
+        "documentation"
+      ],
+      "required_tests_oracle": [
+        "accuracy"
+      ],
+      "selected_tests": [],
+      "missed_required_tests": [
+        "accuracy"
+      ],
+      "full_test_units": 4,
+      "selected_test_units": 0,
+      "naive_hash_test_units": 4,
+      "work_reduction_vs_full": 1.0,
+      "undetected_invalidations": 1,
+      "simulated_full_cost_seconds": 4.0,
+      "simulated_selected_cost_seconds": 0.0
+    }
+  ],
+  "scenario_summary": {
+    "n_scenarios": 8,
+    "test_unit_reduction_vs_full": 0.5938,
+    "total_missed_oracle_tests": 1,
+    "note": "Savings are COUNTED test units, not measured time; oracle is synthetic."
+  },
+  "total_wall_seconds": 1.10889,
+  "limitations": [
+    "Dependency matrix is manually specified, not learned or formally verified.",
+    "Scenario oracle is a synthetic assumption; not proof of real-world risk.",
+    "Hidden dependency intentionally demonstrates unsafe evidence reuse.",
+    "No cryptographic signatures, access control, poisoning, or formal assurance.",
+    "Model metrics are measured; scenario savings are counted test units."
+  ]
+}

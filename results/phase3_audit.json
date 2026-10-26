@@ -1,0 +1,371 @@
+{
+  "status": "retrospective_experimental_audit_only",
+  "summary": {
+    "scenario_runs": 12,
+    "full_test_executions": 48,
+    "declared_test_executions": 22,
+    "conservative_test_executions": 30,
+    "declared_omitted_observable_changes": 8,
+    "conservative_omitted_observable_changes": 0,
+    "conservative_fraction_vs_full": 0.625
+  },
+  "cases": [
+    {
+      "dataset": "breast_cancer",
+      "scenario": "noise_scale_change",
+      "changed_components": [
+        "noise_config"
+      ],
+      "observed_changed_metrics": [
+        "robustness"
+      ],
+      "declared_missed": [],
+      "conservative_missed": [],
+      "declared_tests": [
+        "robustness"
+      ],
+      "conservative_tests": [
+        "robustness"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "breast_cancer",
+      "scenario": "confidence_threshold_change",
+      "changed_components": [
+        "threshold_config"
+      ],
+      "observed_changed_metrics": [
+        "confidence"
+      ],
+      "declared_missed": [],
+      "conservative_missed": [],
+      "declared_tests": [
+        "confidence"
+      ],
+      "conservative_tests": [
+        "confidence"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "breast_cancer",
+      "scenario": "group_boundary_change",
+      "changed_components": [
+        "group_config"
+      ],
+      "observed_changed_metrics": [
+        "subgroup_gap"
+      ],
+      "declared_missed": [],
+      "conservative_missed": [],
+      "declared_tests": [
+        "subgroup_gap"
+      ],
+      "conservative_tests": [
+        "subgroup_gap"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "breast_cancer",
+      "scenario": "preprocessing_scale_change",
+      "changed_components": [
+        "preprocess"
+      ],
+      "observed_changed_metrics": [
+        "confidence",
+        "robustness"
+      ],
+      "declared_missed": [],
+      "conservative_missed": [],
+      "declared_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "breast_cancer",
+      "scenario": "weight_perturbation",
+      "changed_components": [
+        "weights"
+      ],
+      "observed_changed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "declared_missed": [],
+      "conservative_missed": [],
+      "declared_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "breast_cancer",
+      "scenario": "unknown_dependency",
+      "changed_components": [
+        "untracked_pipeline_change"
+      ],
+      "observed_changed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "declared_missed": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_missed": [],
+      "declared_tests": [],
+      "conservative_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "noise_scale_change",
+      "changed_components": [
+        "noise_config"
+      ],
+      "observed_changed_metrics": [
+        "robustness"
+      ],
+      "declared_missed": [],
+      "conservative_missed": [],
+      "declared_tests": [
+        "robustness"
+      ],
+      "conservative_tests": [
+        "robustness"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "confidence_threshold_change",
+      "changed_components": [
+        "threshold_config"
+      ],
+      "observed_changed_metrics": [],
+      "declared_missed": [],
+      "conservative_missed": [],
+      "declared_tests": [
+        "confidence"
+      ],
+      "conservative_tests": [
+        "confidence"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "group_boundary_change",
+      "changed_components": [
+        "group_config"
+      ],
+      "observed_changed_metrics": [
+        "subgroup_gap"
+      ],
+      "declared_missed": [],
+      "conservative_missed": [],
+      "declared_tests": [
+        "subgroup_gap"
+      ],
+      "conservative_tests": [
+        "subgroup_gap"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "preprocessing_scale_change",
+      "changed_components": [
+        "preprocess"
+      ],
+      "observed_changed_metrics": [],
+      "declared_missed": [],
+      "conservative_missed": [],
+      "declared_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "weight_perturbation",
+      "changed_components": [
+        "weights"
+      ],
+      "observed_changed_metrics": [
+        "confidence",
+        "robustness"
+      ],
+      "declared_missed": [],
+      "conservative_missed": [],
+      "declared_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "unknown_dependency",
+      "changed_components": [
+        "untracked_pipeline_change"
+      ],
+      "observed_changed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "declared_missed": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_missed": [],
+      "declared_tests": [],
+      "conservative_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "full_tests": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap",
+        "confidence"
+      ],
+      "evidence_reuse_allowed": false,
+      "reason": "Metric observations do not prove assurance evidence remains valid."
+    }
+  ],
+  "caveat": "This is a post-hoc evaluation using full-run metric observations, not a proof of safety or evidence validity.",
+  "source_sha256": "e58d24ae0b98fc289b2ed260e5813794f1d96c7cae5b993f49666cdaafcb33c8"
+}

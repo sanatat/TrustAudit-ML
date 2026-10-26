@@ -1,0 +1,2929 @@
+{
+  "protocol": "Single-component training outcomes from OTHER dataset; heldout dataset with NEW combination recipes; 3 initialization seeds; outcomes used only for scoring",
+  "train_source_sha256": "e58d24ae0b98fc289b2ed260e5813794f1d96c7cae5b993f49666cdaafcb33c8",
+  "seeds": [
+    11,
+    23,
+    47
+  ],
+  "train_source": "Phase 2 measured single-component interventions, no Phase 6 label in training",
+  "test_recipes_not_seen_in_training": [
+    "preprocess_plus_group",
+    "preprocess_plus_noise",
+    "unseen_input_zero_shift",
+    "unseen_shift_plus_threshold",
+    "weights_plus_preprocess_plus_noise",
+    "weights_plus_threshold"
+  ],
+  "aggregation": {
+    "full": {
+      "executions": 144,
+      "full_executions": 144,
+      "reduction_fraction": 0.0,
+      "missed_observed_metric_events": 0,
+      "cases_with_misses": 0
+    },
+    "declared": {
+      "executions": 102,
+      "full_executions": 144,
+      "reduction_fraction": 0.2917,
+      "missed_observed_metric_events": 42,
+      "cases_with_misses": 12
+    },
+    "fail_closed": {
+      "executions": 144,
+      "full_executions": 144,
+      "reduction_fraction": 0.0,
+      "missed_observed_metric_events": 0,
+      "cases_with_misses": 0
+    },
+    "learned": {
+      "executions": 102,
+      "full_executions": 144,
+      "reduction_fraction": 0.2917,
+      "missed_observed_metric_events": 42,
+      "cases_with_misses": 12
+    },
+    "learned_guarded": {
+      "executions": 144,
+      "full_executions": 144,
+      "reduction_fraction": 0.0,
+      "missed_observed_metric_events": 0,
+      "cases_with_misses": 0
+    }
+  },
+  "per_seed": {
+    "11": {
+      "full": {
+        "executions": 48,
+        "missed_events": 0
+      },
+      "declared": {
+        "executions": 34,
+        "missed_events": 14
+      },
+      "fail_closed": {
+        "executions": 48,
+        "missed_events": 0
+      },
+      "learned": {
+        "executions": 34,
+        "missed_events": 14
+      },
+      "learned_guarded": {
+        "executions": 48,
+        "missed_events": 0
+      }
+    },
+    "23": {
+      "full": {
+        "executions": 48,
+        "missed_events": 0
+      },
+      "declared": {
+        "executions": 34,
+        "missed_events": 14
+      },
+      "fail_closed": {
+        "executions": 48,
+        "missed_events": 0
+      },
+      "learned": {
+        "executions": 34,
+        "missed_events": 14
+      },
+      "learned_guarded": {
+        "executions": 48,
+        "missed_events": 0
+      }
+    },
+    "47": {
+      "full": {
+        "executions": 48,
+        "missed_events": 0
+      },
+      "declared": {
+        "executions": 34,
+        "missed_events": 14
+      },
+      "fail_closed": {
+        "executions": 48,
+        "missed_events": 0
+      },
+      "learned": {
+        "executions": 34,
+        "missed_events": 14
+      },
+      "learned_guarded": {
+        "executions": 48,
+        "missed_events": 0
+      }
+    }
+  },
+  "learned_by_fold": {
+    "breast_cancer": {
+      "group_config": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 0,
+          "robustness": 0,
+          "subgroup_gap": 1,
+          "confidence": 0
+        },
+        "suggested_tests": [
+          "subgroup_gap"
+        ]
+      },
+      "noise_config": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 0,
+          "robustness": 1,
+          "subgroup_gap": 0,
+          "confidence": 0
+        },
+        "suggested_tests": [
+          "robustness"
+        ]
+      },
+      "preprocess": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 0,
+          "robustness": 0,
+          "subgroup_gap": 0,
+          "confidence": 0
+        },
+        "suggested_tests": []
+      },
+      "threshold_config": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 0,
+          "robustness": 0,
+          "subgroup_gap": 0,
+          "confidence": 0
+        },
+        "suggested_tests": []
+      },
+      "untracked_pipeline_change": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 1,
+          "robustness": 1,
+          "subgroup_gap": 1,
+          "confidence": 1
+        },
+        "suggested_tests": [
+          "accuracy",
+          "confidence",
+          "robustness",
+          "subgroup_gap"
+        ]
+      },
+      "weights": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 0,
+          "robustness": 1,
+          "subgroup_gap": 0,
+          "confidence": 1
+        },
+        "suggested_tests": [
+          "confidence",
+          "robustness"
+        ]
+      }
+    },
+    "wine": {
+      "group_config": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 0,
+          "robustness": 0,
+          "subgroup_gap": 1,
+          "confidence": 0
+        },
+        "suggested_tests": [
+          "subgroup_gap"
+        ]
+      },
+      "noise_config": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 0,
+          "robustness": 1,
+          "subgroup_gap": 0,
+          "confidence": 0
+        },
+        "suggested_tests": [
+          "robustness"
+        ]
+      },
+      "preprocess": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 0,
+          "robustness": 1,
+          "subgroup_gap": 0,
+          "confidence": 1
+        },
+        "suggested_tests": [
+          "confidence",
+          "robustness"
+        ]
+      },
+      "threshold_config": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 0,
+          "robustness": 0,
+          "subgroup_gap": 0,
+          "confidence": 1
+        },
+        "suggested_tests": [
+          "confidence"
+        ]
+      },
+      "untracked_pipeline_change": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 1,
+          "robustness": 1,
+          "subgroup_gap": 1,
+          "confidence": 1
+        },
+        "suggested_tests": [
+          "accuracy",
+          "confidence",
+          "robustness",
+          "subgroup_gap"
+        ]
+      },
+      "weights": {
+        "trials": 1,
+        "positive_counts": {
+          "accuracy": 1,
+          "robustness": 1,
+          "subgroup_gap": 1,
+          "confidence": 1
+        },
+        "suggested_tests": [
+          "accuracy",
+          "confidence",
+          "robustness",
+          "subgroup_gap"
+        ]
+      }
+    }
+  },
+  "runs": [
+    {
+      "dataset": "breast_cancer",
+      "seed": 11,
+      "scenario": "preprocess_plus_noise",
+      "changed_components": [
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.95804196
+      },
+      "observed_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.92307692,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.95804196
+      },
+      "changed_observed_metrics": [
+        "robustness"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 11,
+      "scenario": "weights_plus_threshold",
+      "changed_components": [
+        "weights",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.95804196
+      },
+      "observed_metrics": {
+        "accuracy": 0.9020979,
+        "robustness": 0.92307692,
+        "subgroup_gap": 0.11052426,
+        "confidence": 0.7972028
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 11,
+      "scenario": "preprocess_plus_group",
+      "changed_components": [
+        "preprocess",
+        "group_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.95804196
+      },
+      "observed_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.01895119,
+        "confidence": 0.95804196
+      },
+      "changed_observed_metrics": [
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 11,
+      "scenario": "weights_plus_preprocess_plus_noise",
+      "changed_components": [
+        "weights",
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.95804196
+      },
+      "observed_metrics": {
+        "accuracy": 0.93006993,
+        "robustness": 0.88111888,
+        "subgroup_gap": 0.11091549,
+        "confidence": 0.90909091
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 11,
+      "scenario": "unseen_input_zero_shift",
+      "changed_components": [
+        "input_shift_v2"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.95804196
+      },
+      "observed_metrics": {
+        "accuracy": 0.62937063,
+        "robustness": 0.56643357,
+        "subgroup_gap": 0.06474961,
+        "confidence": 0.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 11,
+      "scenario": "unseen_shift_plus_threshold",
+      "changed_components": [
+        "input_shift_v2",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.95804196
+      },
+      "observed_metrics": {
+        "accuracy": 0.62937063,
+        "robustness": 0.56643357,
+        "subgroup_gap": 0.06474961,
+        "confidence": 0.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 23,
+      "scenario": "preprocess_plus_noise",
+      "changed_components": [
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.96503497,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.04147105,
+        "confidence": 0.94405594
+      },
+      "observed_metrics": {
+        "accuracy": 0.96503497,
+        "robustness": 0.93006993,
+        "subgroup_gap": 0.04147105,
+        "confidence": 0.97202797
+      },
+      "changed_observed_metrics": [
+        "confidence",
+        "robustness"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 23,
+      "scenario": "weights_plus_threshold",
+      "changed_components": [
+        "weights",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.96503497,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.04147105,
+        "confidence": 0.94405594
+      },
+      "observed_metrics": {
+        "accuracy": 0.8951049,
+        "robustness": 0.8951049,
+        "subgroup_gap": 0.12441315,
+        "confidence": 0.78321678
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 23,
+      "scenario": "preprocess_plus_group",
+      "changed_components": [
+        "preprocess",
+        "group_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.96503497,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.04147105,
+        "confidence": 0.94405594
+      },
+      "observed_metrics": {
+        "accuracy": 0.96503497,
+        "robustness": 0.96503497,
+        "subgroup_gap": 0.0096054,
+        "confidence": 0.97202797
+      },
+      "changed_observed_metrics": [
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 23,
+      "scenario": "weights_plus_preprocess_plus_noise",
+      "changed_components": [
+        "weights",
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.96503497,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.04147105,
+        "confidence": 0.94405594
+      },
+      "observed_metrics": {
+        "accuracy": 0.90909091,
+        "robustness": 0.88111888,
+        "subgroup_gap": 0.09663537,
+        "confidence": 0.93006993
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 23,
+      "scenario": "unseen_input_zero_shift",
+      "changed_components": [
+        "input_shift_v2"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.96503497,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.04147105,
+        "confidence": 0.94405594
+      },
+      "observed_metrics": {
+        "accuracy": 0.62937063,
+        "robustness": 0.60839161,
+        "subgroup_gap": 0.06474961,
+        "confidence": 0.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 23,
+      "scenario": "unseen_shift_plus_threshold",
+      "changed_components": [
+        "input_shift_v2",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.96503497,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.04147105,
+        "confidence": 0.94405594
+      },
+      "observed_metrics": {
+        "accuracy": 0.62937063,
+        "robustness": 0.60839161,
+        "subgroup_gap": 0.06474961,
+        "confidence": 0.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 47,
+      "scenario": "preprocess_plus_noise",
+      "changed_components": [
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.96503497,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.97202797
+      },
+      "observed_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.91608392,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.98601399
+      },
+      "changed_observed_metrics": [
+        "confidence",
+        "robustness"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 47,
+      "scenario": "weights_plus_threshold",
+      "changed_components": [
+        "weights",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.96503497,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.97202797
+      },
+      "observed_metrics": {
+        "accuracy": 0.90909091,
+        "robustness": 0.93006993,
+        "subgroup_gap": 0.06866197,
+        "confidence": 0.7972028
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 47,
+      "scenario": "preprocess_plus_group",
+      "changed_components": [
+        "preprocess",
+        "group_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.96503497,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.97202797
+      },
+      "observed_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.95804196,
+        "subgroup_gap": 0.01895119,
+        "confidence": 0.98601399
+      },
+      "changed_observed_metrics": [
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 47,
+      "scenario": "weights_plus_preprocess_plus_noise",
+      "changed_components": [
+        "weights",
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.96503497,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.97202797
+      },
+      "observed_metrics": {
+        "accuracy": 0.91608392,
+        "robustness": 0.87412587,
+        "subgroup_gap": 0.08274648,
+        "confidence": 0.91608392
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 47,
+      "scenario": "unseen_input_zero_shift",
+      "changed_components": [
+        "input_shift_v2"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.96503497,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.97202797
+      },
+      "observed_metrics": {
+        "accuracy": 0.62937063,
+        "robustness": 0.58041958,
+        "subgroup_gap": 0.06474961,
+        "confidence": 0.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 47,
+      "scenario": "unseen_shift_plus_threshold",
+      "changed_components": [
+        "input_shift_v2",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.95804196,
+        "robustness": 0.96503497,
+        "subgroup_gap": 0.05535994,
+        "confidence": 0.97202797
+      },
+      "observed_metrics": {
+        "accuracy": 0.62937063,
+        "robustness": 0.58041958,
+        "subgroup_gap": 0.06474961,
+        "confidence": 0.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 11,
+      "scenario": "preprocess_plus_noise",
+      "changed_components": [
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 1.0,
+        "subgroup_gap": 0.0,
+        "confidence": 1.0
+      },
+      "observed_metrics": {
+        "accuracy": 1.0,
+        "robustness": 0.91111111,
+        "subgroup_gap": 0.0,
+        "confidence": 1.0
+      },
+      "changed_observed_metrics": [
+        "robustness"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 11,
+      "scenario": "weights_plus_threshold",
+      "changed_components": [
+        "weights",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 1.0,
+        "subgroup_gap": 0.0,
+        "confidence": 1.0
+      },
+      "observed_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.91111111
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 11,
+      "scenario": "preprocess_plus_group",
+      "changed_components": [
+        "preprocess",
+        "group_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 1.0,
+        "subgroup_gap": 0.0,
+        "confidence": 1.0
+      },
+      "observed_metrics": {
+        "accuracy": 1.0,
+        "robustness": 1.0,
+        "subgroup_gap": 0.0,
+        "confidence": 1.0
+      },
+      "changed_observed_metrics": [],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 11,
+      "scenario": "weights_plus_preprocess_plus_noise",
+      "changed_components": [
+        "weights",
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 1.0,
+        "subgroup_gap": 0.0,
+        "confidence": 1.0
+      },
+      "observed_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.93333333,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.95555556
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 11,
+      "scenario": "unseen_input_zero_shift",
+      "changed_components": [
+        "input_shift_v2"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 1.0,
+        "subgroup_gap": 0.0,
+        "confidence": 1.0
+      },
+      "observed_metrics": {
+        "accuracy": 0.66666667,
+        "robustness": 0.6,
+        "subgroup_gap": 0.23715415,
+        "confidence": 0.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 11,
+      "scenario": "unseen_shift_plus_threshold",
+      "changed_components": [
+        "input_shift_v2",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 1.0,
+        "subgroup_gap": 0.0,
+        "confidence": 1.0
+      },
+      "observed_metrics": {
+        "accuracy": 0.66666667,
+        "robustness": 0.6,
+        "subgroup_gap": 0.23715415,
+        "confidence": 0.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 23,
+      "scenario": "preprocess_plus_noise",
+      "changed_components": [
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.95555556,
+        "subgroup_gap": 0.04545455,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.91111111,
+        "subgroup_gap": 0.04545455,
+        "confidence": 0.97777778
+      },
+      "changed_observed_metrics": [
+        "robustness"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 23,
+      "scenario": "weights_plus_threshold",
+      "changed_components": [
+        "weights",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.95555556,
+        "subgroup_gap": 0.04545455,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 0.95555556,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.08695652,
+        "confidence": 0.88888889
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 23,
+      "scenario": "preprocess_plus_group",
+      "changed_components": [
+        "preprocess",
+        "group_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.95555556,
+        "subgroup_gap": 0.04545455,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.95555556,
+        "subgroup_gap": 0.03030303,
+        "confidence": 0.97777778
+      },
+      "changed_observed_metrics": [
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 23,
+      "scenario": "weights_plus_preprocess_plus_noise",
+      "changed_components": [
+        "weights",
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.95555556,
+        "subgroup_gap": 0.04545455,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.93333333,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.93333333
+      },
+      "changed_observed_metrics": [
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 23,
+      "scenario": "unseen_input_zero_shift",
+      "changed_components": [
+        "input_shift_v2"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.95555556,
+        "subgroup_gap": 0.04545455,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 0.66666667,
+        "robustness": 0.62222222,
+        "subgroup_gap": 0.23715415,
+        "confidence": 1.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 23,
+      "scenario": "unseen_shift_plus_threshold",
+      "changed_components": [
+        "input_shift_v2",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.95555556,
+        "subgroup_gap": 0.04545455,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 0.66666667,
+        "robustness": 0.62222222,
+        "subgroup_gap": 0.23715415,
+        "confidence": 0.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 47,
+      "scenario": "preprocess_plus_noise",
+      "changed_components": [
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.0,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 1.0,
+        "robustness": 0.91111111,
+        "subgroup_gap": 0.0,
+        "confidence": 0.97777778
+      },
+      "changed_observed_metrics": [
+        "robustness"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 47,
+      "scenario": "weights_plus_threshold",
+      "changed_components": [
+        "weights",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.0,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.88888889
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 47,
+      "scenario": "preprocess_plus_group",
+      "changed_components": [
+        "preprocess",
+        "group_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.0,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 1.0,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.0,
+        "confidence": 0.97777778
+      },
+      "changed_observed_metrics": [],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 47,
+      "scenario": "weights_plus_preprocess_plus_noise",
+      "changed_components": [
+        "weights",
+        "preprocess",
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.0,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.93333333,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.97777778
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 47,
+      "scenario": "unseen_input_zero_shift",
+      "changed_components": [
+        "input_shift_v2"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.0,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 0.66666667,
+        "robustness": 0.64444444,
+        "subgroup_gap": 0.23715415,
+        "confidence": 1.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    },
+    {
+      "dataset": "wine",
+      "seed": 47,
+      "scenario": "unseen_shift_plus_threshold",
+      "changed_components": [
+        "input_shift_v2",
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 1.0,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.0,
+        "confidence": 0.97777778
+      },
+      "observed_metrics": {
+        "accuracy": 0.66666667,
+        "robustness": 0.64444444,
+        "subgroup_gap": 0.23715415,
+        "confidence": 0.0
+      },
+      "changed_observed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "selection": {
+        "full": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "declared": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "fail_closed": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        },
+        "learned": {
+          "selected": [
+            "confidence"
+          ],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ]
+        },
+        "learned_guarded": {
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": []
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "The held-out combinations reuse components known to the training procedure, except input_shift_v2.",
+    "Both datasets were used in earlier exploratory project development; this is a pilot, not independent validation.",
+    "Seeds change initialization but do not constitute independent datasets or demonstrate statistical significance.",
+    "Observed metric changes are finite-sample differences, not a complete assurance invalidation oracle.",
+    "The learned rule uses co-occurrence, not causal proof; unknown components fail closed only in guarded policy.",
+    "No runtime speedup or security/fairness guarantee is implied by fewer selected tests."
+  ]
+}

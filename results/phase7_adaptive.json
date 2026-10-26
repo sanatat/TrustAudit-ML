@@ -1,0 +1,4070 @@
+{
+  "protocol": "Leave-one-dataset-out replay of Phase 6 results; scenario-recipe empirical sensitivity, Wilson upper bounds, fail closed on unseen recipes",
+  "folds": [
+    {
+      "heldout_dataset": "breast_cancer",
+      "training_scenarios": 18,
+      "test_scenarios": 18,
+      "unique_training_recipes": 6
+    },
+    {
+      "heldout_dataset": "wine",
+      "training_scenarios": 18,
+      "test_scenarios": 18,
+      "unique_training_recipes": 6
+    }
+  ],
+  "min_support": 3,
+  "thresholds": [
+    0.05,
+    0.1,
+    0.2,
+    0.35,
+    0.5,
+    0.7,
+    0.9,
+    1.01
+  ],
+  "policies": {
+    "0.05": {
+      "selected_tests": 144,
+      "total_tests": 144,
+      "test_reduction_fraction": 0.0,
+      "missed_observable_events": 0,
+      "scenarios_with_misses": 0,
+      "decisions": [
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        }
+      ]
+    },
+    "0.1": {
+      "selected_tests": 144,
+      "total_tests": 144,
+      "test_reduction_fraction": 0.0,
+      "missed_observable_events": 0,
+      "scenarios_with_misses": 0,
+      "decisions": [
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        }
+      ]
+    },
+    "0.2": {
+      "selected_tests": 144,
+      "total_tests": 144,
+      "test_reduction_fraction": 0.0,
+      "missed_observable_events": 0,
+      "scenarios_with_misses": 0,
+      "decisions": [
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        }
+      ]
+    },
+    "0.35": {
+      "selected_tests": 144,
+      "total_tests": 144,
+      "test_reduction_fraction": 0.0,
+      "missed_observable_events": 0,
+      "scenarios_with_misses": 0,
+      "decisions": [
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        }
+      ]
+    },
+    "0.5": {
+      "selected_tests": 144,
+      "total_tests": 144,
+      "test_reduction_fraction": 0.0,
+      "missed_observable_events": 0,
+      "scenarios_with_misses": 0,
+      "decisions": [
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        }
+      ]
+    },
+    "0.7": {
+      "selected_tests": 117,
+      "total_tests": 144,
+      "test_reduction_fraction": 0.1875,
+      "missed_observable_events": 6,
+      "scenarios_with_misses": 4,
+      "decisions": [
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "robustness"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "robustness"
+          ],
+          "missed_observed": [
+            "confidence"
+          ],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "subgroup_gap"
+          ],
+          "missed_observed": [
+            "confidence",
+            "robustness"
+          ],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "robustness"
+          ],
+          "missed_observed": [
+            "confidence"
+          ],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "subgroup_gap"
+          ],
+          "missed_observed": [
+            "confidence",
+            "robustness"
+          ],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "confidence",
+            "robustness"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "confidence",
+            "robustness"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "confidence",
+            "robustness"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        }
+      ]
+    },
+    "0.9": {
+      "selected_tests": 114,
+      "total_tests": 144,
+      "test_reduction_fraction": 0.2083,
+      "missed_observable_events": 9,
+      "scenarios_with_misses": 5,
+      "decisions": [
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "robustness"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [],
+          "missed_observed": [
+            "subgroup_gap"
+          ],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "robustness"
+          ],
+          "missed_observed": [
+            "confidence"
+          ],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [],
+          "missed_observed": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "robustness"
+          ],
+          "missed_observed": [
+            "confidence"
+          ],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [],
+          "missed_observed": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "confidence",
+            "robustness"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "confidence",
+            "robustness"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [
+            "confidence",
+            "robustness"
+          ],
+          "missed_observed": [],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "missed_observed": [],
+          "observed_count": 4,
+          "recipe_support": 3
+        }
+      ]
+    },
+    "1.01": {
+      "selected_tests": 0,
+      "total_tests": 144,
+      "test_reduction_fraction": 1.0,
+      "missed_observable_events": 109,
+      "scenarios_with_misses": 34,
+      "decisions": [
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "robustness"
+          ],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [],
+          "missed_observed": [
+            "subgroup_gap"
+          ],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "confidence",
+            "robustness"
+          ],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [],
+          "missed_observed": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "confidence",
+            "robustness"
+          ],
+          "observed_count": 2,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [],
+          "missed_observed": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "breast_cancer",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "robustness"
+          ],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "preprocess_plus_group",
+          "selected": [],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 11,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "robustness"
+          ],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "preprocess_plus_group",
+          "selected": [],
+          "missed_observed": [
+            "subgroup_gap"
+          ],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 23,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "robustness"
+          ],
+          "observed_count": 1,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "subgroup_gap"
+          ],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "preprocess_plus_group",
+          "selected": [],
+          "missed_observed": [],
+          "observed_count": 0,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "weights_plus_preprocess_plus_noise",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 3,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_input_zero_shift",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        },
+        {
+          "dataset": "wine",
+          "seed": 47,
+          "scenario": "unseen_shift_plus_threshold",
+          "selected": [],
+          "missed_observed": [
+            "accuracy",
+            "confidence",
+            "robustness",
+            "subgroup_gap"
+          ],
+          "observed_count": 4,
+          "recipe_support": 3
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "The same mutation recipes and multiple correlated seeds are present on both datasets; not novel-recipe generalization.",
+    "The upper confidence bounds describe empirical binary metric-change rates, not calibrated probabilities of harm or formal guarantees.",
+    "The two datasets and reused exploratory test designs are insufficient for reliable risk calibration.",
+    "Tests omitted by a policy are scored against precomputed full evaluations in this offline replay only.",
+    "Metric changes are finite-sample differences; no security or fairness assurance is established.",
+    "Any threshold selected after examining held-out outcomes is exploratory and must be tuned on separate calibration data."
+  ],
+  "source_sha256": "27ba1d503eaba5deebbd080c529099ab4bf8bf9b860e87683c17b1ecfb21ad6e"
+}

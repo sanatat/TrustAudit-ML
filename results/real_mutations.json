@@ -1,0 +1,538 @@
+{
+  "title": "TrustAudit-ML controlled mutation study",
+  "seed": 42,
+  "runtime": {
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu"
+  },
+  "summary": {
+    "datasets": 2,
+    "scenario_runs": 12,
+    "changed_metric_events": 21,
+    "missed_metric_events_declared": 8,
+    "missed_metric_events_conservative": 0,
+    "selected_test_fraction": 0.4583,
+    "methodology": "Real mutations, measured finite-sample test metrics; test timings noisy at millisecond scale."
+  },
+  "runs": [
+    {
+      "dataset": "breast_cancer",
+      "scenario": "noise_scale_change",
+      "changed_components": [
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97202797,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05555556,
+        "confidence": 0.96503497
+      },
+      "mutated_metrics": {
+        "accuracy": 0.97202797,
+        "robustness": 0.91608392,
+        "subgroup_gap": 0.05555556,
+        "confidence": 0.96503497
+      },
+      "observably_changed_metrics": [
+        "robustness"
+      ],
+      "declared_selected_tests": [
+        "robustness"
+      ],
+      "declared_missed_observable_changes": [],
+      "conservative_selected_tests": [
+        "robustness"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "scenario_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "baseline_test_inputs_sha256": "e4dcf6f2165309b7ea01c4f804d493990b7f0ab9971756b647f4fbafbadbd8ef",
+      "scenario_test_inputs_sha256": "e4dcf6f2165309b7ea01c4f804d493990b7f0ab9971756b647f4fbafbadbd8ef",
+      "full_evaluation_seconds": 0.00100888,
+      "selected_evaluation_seconds": 0.00021594,
+      "selected_test_count": 1,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "breast_cancer",
+      "scenario": "confidence_threshold_change",
+      "changed_components": [
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97202797,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05555556,
+        "confidence": 0.96503497
+      },
+      "mutated_metrics": {
+        "accuracy": 0.97202797,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05555556,
+        "confidence": 0.91608392
+      },
+      "observably_changed_metrics": [
+        "confidence"
+      ],
+      "declared_selected_tests": [
+        "confidence"
+      ],
+      "declared_missed_observable_changes": [],
+      "conservative_selected_tests": [
+        "confidence"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "scenario_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "baseline_test_inputs_sha256": "e4dcf6f2165309b7ea01c4f804d493990b7f0ab9971756b647f4fbafbadbd8ef",
+      "scenario_test_inputs_sha256": "e4dcf6f2165309b7ea01c4f804d493990b7f0ab9971756b647f4fbafbadbd8ef",
+      "full_evaluation_seconds": 0.00061353,
+      "selected_evaluation_seconds": 6.342e-05,
+      "selected_test_count": 1,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "breast_cancer",
+      "scenario": "group_boundary_change",
+      "changed_components": [
+        "group_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97202797,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05555556,
+        "confidence": 0.96503497
+      },
+      "mutated_metrics": {
+        "accuracy": 0.97202797,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.00025961,
+        "confidence": 0.96503497
+      },
+      "observably_changed_metrics": [
+        "subgroup_gap"
+      ],
+      "declared_selected_tests": [
+        "subgroup_gap"
+      ],
+      "declared_missed_observable_changes": [],
+      "conservative_selected_tests": [
+        "subgroup_gap"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "scenario_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "baseline_test_inputs_sha256": "e4dcf6f2165309b7ea01c4f804d493990b7f0ab9971756b647f4fbafbadbd8ef",
+      "scenario_test_inputs_sha256": "e4dcf6f2165309b7ea01c4f804d493990b7f0ab9971756b647f4fbafbadbd8ef",
+      "full_evaluation_seconds": 0.00061833,
+      "selected_evaluation_seconds": 0.0001691,
+      "selected_test_count": 1,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "breast_cancer",
+      "scenario": "preprocessing_scale_change",
+      "changed_components": [
+        "preprocess"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97202797,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05555556,
+        "confidence": 0.96503497
+      },
+      "mutated_metrics": {
+        "accuracy": 0.97202797,
+        "robustness": 0.96503497,
+        "subgroup_gap": 0.05555556,
+        "confidence": 0.97202797
+      },
+      "observably_changed_metrics": [
+        "confidence",
+        "robustness"
+      ],
+      "declared_selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "declared_missed_observable_changes": [],
+      "conservative_selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "scenario_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "baseline_test_inputs_sha256": "e4dcf6f2165309b7ea01c4f804d493990b7f0ab9971756b647f4fbafbadbd8ef",
+      "scenario_test_inputs_sha256": "7069bf6b7f1f1063cc50767d01d8307a7afc95f854762ef641dcacaec3c14093",
+      "full_evaluation_seconds": 0.00045763,
+      "selected_evaluation_seconds": 0.00046204,
+      "selected_test_count": 4,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "breast_cancer",
+      "scenario": "weight_perturbation",
+      "changed_components": [
+        "weights"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97202797,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05555556,
+        "confidence": 0.96503497
+      },
+      "mutated_metrics": {
+        "accuracy": 0.91608392,
+        "robustness": 0.92307692,
+        "subgroup_gap": 0.08274648,
+        "confidence": 0.84615385
+      },
+      "observably_changed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "declared_selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "declared_missed_observable_changes": [],
+      "conservative_selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "scenario_weights_sha256": "0f0e25073632fc364297fe2588417cbfb0c830de3030943978a1e7e3959d88ea",
+      "baseline_test_inputs_sha256": "e4dcf6f2165309b7ea01c4f804d493990b7f0ab9971756b647f4fbafbadbd8ef",
+      "scenario_test_inputs_sha256": "e4dcf6f2165309b7ea01c4f804d493990b7f0ab9971756b647f4fbafbadbd8ef",
+      "full_evaluation_seconds": 0.00050758,
+      "selected_evaluation_seconds": 0.0004789,
+      "selected_test_count": 4,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "breast_cancer",
+      "scenario": "unknown_dependency",
+      "changed_components": [
+        "untracked_pipeline_change"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97202797,
+        "robustness": 0.97202797,
+        "subgroup_gap": 0.05555556,
+        "confidence": 0.96503497
+      },
+      "mutated_metrics": {
+        "accuracy": 0.62937063,
+        "robustness": 0.60839161,
+        "subgroup_gap": 0.06474961,
+        "confidence": 0.0
+      },
+      "observably_changed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "declared_selected_tests": [],
+      "declared_missed_observable_changes": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "scenario_weights_sha256": "3e2b89a01e41e345ceed5c4631f647b5b320fbe0cc6087f65070417314d40f00",
+      "baseline_test_inputs_sha256": "e4dcf6f2165309b7ea01c4f804d493990b7f0ab9971756b647f4fbafbadbd8ef",
+      "scenario_test_inputs_sha256": "973556f22a2f90c3a7631b22eb1098ef8a543bdcf01ebc9cdd837334fbfff638",
+      "full_evaluation_seconds": 0.0004788,
+      "selected_evaluation_seconds": 0.0,
+      "selected_test_count": 0,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "noise_scale_change",
+      "changed_components": [
+        "noise_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.95555556
+      },
+      "mutated_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.88888889,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.95555556
+      },
+      "observably_changed_metrics": [
+        "robustness"
+      ],
+      "declared_selected_tests": [
+        "robustness"
+      ],
+      "declared_missed_observable_changes": [],
+      "conservative_selected_tests": [
+        "robustness"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "scenario_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "baseline_test_inputs_sha256": "1c29488e25f14947132259440beb70135e73b55f750bdbf75f6a549f364a30ff",
+      "scenario_test_inputs_sha256": "1c29488e25f14947132259440beb70135e73b55f750bdbf75f6a549f364a30ff",
+      "full_evaluation_seconds": 0.00083742,
+      "selected_evaluation_seconds": 0.00014972,
+      "selected_test_count": 1,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "confidence_threshold_change",
+      "changed_components": [
+        "threshold_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.95555556
+      },
+      "mutated_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.95555556
+      },
+      "observably_changed_metrics": [],
+      "declared_selected_tests": [
+        "confidence"
+      ],
+      "declared_missed_observable_changes": [],
+      "conservative_selected_tests": [
+        "confidence"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "scenario_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "baseline_test_inputs_sha256": "1c29488e25f14947132259440beb70135e73b55f750bdbf75f6a549f364a30ff",
+      "scenario_test_inputs_sha256": "1c29488e25f14947132259440beb70135e73b55f750bdbf75f6a549f364a30ff",
+      "full_evaluation_seconds": 0.00047669,
+      "selected_evaluation_seconds": 5.203e-05,
+      "selected_test_count": 1,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "group_boundary_change",
+      "changed_components": [
+        "group_config"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.95555556
+      },
+      "mutated_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.03030303,
+        "confidence": 0.95555556
+      },
+      "observably_changed_metrics": [
+        "subgroup_gap"
+      ],
+      "declared_selected_tests": [
+        "subgroup_gap"
+      ],
+      "declared_missed_observable_changes": [],
+      "conservative_selected_tests": [
+        "subgroup_gap"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "scenario_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "baseline_test_inputs_sha256": "1c29488e25f14947132259440beb70135e73b55f750bdbf75f6a549f364a30ff",
+      "scenario_test_inputs_sha256": "1c29488e25f14947132259440beb70135e73b55f750bdbf75f6a549f364a30ff",
+      "full_evaluation_seconds": 0.00040942,
+      "selected_evaluation_seconds": 0.0001715,
+      "selected_test_count": 1,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "preprocessing_scale_change",
+      "changed_components": [
+        "preprocess"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.95555556
+      },
+      "mutated_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.95555556
+      },
+      "observably_changed_metrics": [],
+      "declared_selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "declared_missed_observable_changes": [],
+      "conservative_selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "scenario_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "baseline_test_inputs_sha256": "1c29488e25f14947132259440beb70135e73b55f750bdbf75f6a549f364a30ff",
+      "scenario_test_inputs_sha256": "cd4eca7efb1f8ca05d5aa42ddee3f9f90bf26b8af7a38d6d148a433edb9fec63",
+      "full_evaluation_seconds": 0.0003814,
+      "selected_evaluation_seconds": 0.00036606,
+      "selected_test_count": 4,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "weight_perturbation",
+      "changed_components": [
+        "weights"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.95555556
+      },
+      "mutated_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.95555556,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.93333333
+      },
+      "observably_changed_metrics": [
+        "confidence",
+        "robustness"
+      ],
+      "declared_selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "declared_missed_observable_changes": [],
+      "conservative_selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "scenario_weights_sha256": "e9ee05f45545445fa25621055c554d7b73b5df6b4b013b2870df279cd38fae30",
+      "baseline_test_inputs_sha256": "1c29488e25f14947132259440beb70135e73b55f750bdbf75f6a549f364a30ff",
+      "scenario_test_inputs_sha256": "1c29488e25f14947132259440beb70135e73b55f750bdbf75f6a549f364a30ff",
+      "full_evaluation_seconds": 0.00054661,
+      "selected_evaluation_seconds": 0.00037301,
+      "selected_test_count": 4,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    },
+    {
+      "dataset": "wine",
+      "scenario": "unknown_dependency",
+      "changed_components": [
+        "untracked_pipeline_change"
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.97777778,
+        "robustness": 0.97777778,
+        "subgroup_gap": 0.04347826,
+        "confidence": 0.95555556
+      },
+      "mutated_metrics": {
+        "accuracy": 0.66666667,
+        "robustness": 0.62222222,
+        "subgroup_gap": 0.23715415,
+        "confidence": 1.0
+      },
+      "observably_changed_metrics": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "declared_selected_tests": [],
+      "declared_missed_observable_changes": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_selected_tests": [
+        "accuracy",
+        "confidence",
+        "robustness",
+        "subgroup_gap"
+      ],
+      "conservative_missed_observable_changes": [],
+      "baseline_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "scenario_weights_sha256": "44c44450f3b1ba57a2bc8eb0c4d10c328d09376d85b2e3426a0c1122f50bbbf6",
+      "baseline_test_inputs_sha256": "1c29488e25f14947132259440beb70135e73b55f750bdbf75f6a549f364a30ff",
+      "scenario_test_inputs_sha256": "bbad41c30fc8baa7235dfc60036e84cab1e0eb44c3c701fc8a1b41b9ae833af8",
+      "full_evaluation_seconds": 0.00040098,
+      "selected_evaluation_seconds": 0.0,
+      "selected_test_count": 0,
+      "total_test_count": 4,
+      "note": "Observed metric changes are NOT a complete oracle of assurance invalidation."
+    }
+  ],
+  "limitations": [
+    "Metrics are observational proxies, not certification of robustness, privacy or fairness.",
+    "The subgroup uses a numeric feature, not a protected characteristic.",
+    "Only 2 small tabular datasets and 4 cheap tests; no meaningful runtime speedup claim.",
+    "No hidden-dependency discovery algorithm is implemented.",
+    "Metric equality does not establish reusable assurance evidence.",
+    "Preprocessing/input mutation is evaluated without retraining by design."
+  ]
+}

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this exploratory code, please cite the repository."
+title: "TrustAudit-ML: A CPU-only pilot for change-aware ML assurance auditing"
+type: software
+authors:
+  - family-names: Tat
+    given-names: Sana
+repository-code: "https://github.com/sanatat/TrustAudit-ML"
+license: MIT

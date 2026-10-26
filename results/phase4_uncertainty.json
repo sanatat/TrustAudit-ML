@@ -1,0 +1,158 @@
+{
+  "status": "selection_uses_metadata_only; scoring_uses_exhaustive_posthoc_metrics",
+  "scenario_runs": 12,
+  "experiments": {
+    "unknown_only": {
+      "uncertain_components": [],
+      "policies": {
+        "full": {
+          "executed": 48,
+          "missed_events": 0,
+          "cases_with_misses": 0,
+          "execution_fraction": 1.0,
+          "reduction_vs_full": 0.0
+        },
+        "declared": {
+          "executed": 22,
+          "missed_events": 8,
+          "cases_with_misses": 2,
+          "execution_fraction": 0.4583,
+          "reduction_vs_full": 0.5417
+        },
+        "fail_closed": {
+          "executed": 30,
+          "missed_events": 0,
+          "cases_with_misses": 0,
+          "execution_fraction": 0.625,
+          "reduction_vs_full": 0.375
+        }
+      }
+    },
+    "unknown_plus_preprocess": {
+      "uncertain_components": [
+        "preprocess"
+      ],
+      "policies": {
+        "full": {
+          "executed": 48,
+          "missed_events": 0,
+          "cases_with_misses": 0,
+          "execution_fraction": 1.0,
+          "reduction_vs_full": 0.0
+        },
+        "declared": {
+          "executed": 22,
+          "missed_events": 8,
+          "cases_with_misses": 2,
+          "execution_fraction": 0.4583,
+          "reduction_vs_full": 0.5417
+        },
+        "fail_closed": {
+          "executed": 30,
+          "missed_events": 0,
+          "cases_with_misses": 0,
+          "execution_fraction": 0.625,
+          "reduction_vs_full": 0.375
+        }
+      }
+    },
+    "unknown_plus_weights": {
+      "uncertain_components": [
+        "weights"
+      ],
+      "policies": {
+        "full": {
+          "executed": 48,
+          "missed_events": 0,
+          "cases_with_misses": 0,
+          "execution_fraction": 1.0,
+          "reduction_vs_full": 0.0
+        },
+        "declared": {
+          "executed": 22,
+          "missed_events": 8,
+          "cases_with_misses": 2,
+          "execution_fraction": 0.4583,
+          "reduction_vs_full": 0.5417
+        },
+        "fail_closed": {
+          "executed": 30,
+          "missed_events": 0,
+          "cases_with_misses": 0,
+          "execution_fraction": 0.625,
+          "reduction_vs_full": 0.375
+        }
+      }
+    },
+    "unknown_plus_all_config": {
+      "uncertain_components": [
+        "noise_config",
+        "group_config",
+        "threshold_config"
+      ],
+      "policies": {
+        "full": {
+          "executed": 48,
+          "missed_events": 0,
+          "cases_with_misses": 0,
+          "execution_fraction": 1.0,
+          "reduction_vs_full": 0.0
+        },
+        "declared": {
+          "executed": 22,
+          "missed_events": 8,
+          "cases_with_misses": 2,
+          "execution_fraction": 0.4583,
+          "reduction_vs_full": 0.5417
+        },
+        "fail_closed": {
+          "executed": 48,
+          "missed_events": 0,
+          "cases_with_misses": 0,
+          "execution_fraction": 1.0,
+          "reduction_vs_full": 0.0
+        }
+      }
+    },
+    "all_components_uncertain": {
+      "uncertain_components": [
+        "data",
+        "group_config",
+        "noise_config",
+        "preprocess",
+        "threshold_config",
+        "weights"
+      ],
+      "policies": {
+        "full": {
+          "executed": 48,
+          "missed_events": 0,
+          "cases_with_misses": 0,
+          "execution_fraction": 1.0,
+          "reduction_vs_full": 0.0
+        },
+        "declared": {
+          "executed": 22,
+          "missed_events": 8,
+          "cases_with_misses": 2,
+          "execution_fraction": 0.4583,
+          "reduction_vs_full": 0.5417
+        },
+        "fail_closed": {
+          "executed": 48,
+          "missed_events": 0,
+          "cases_with_misses": 0,
+          "execution_fraction": 1.0,
+          "reduction_vs_full": 0.0
+        }
+      }
+    }
+  },
+  "limitations": [
+    "The uncertainty sets are chosen manually rather than inferred.",
+    "Observable metric changes are not complete ground truth of invalidated assurances.",
+    "Results are retrospective scoring of a prospective selection rule.",
+    "Unknown components trigger all tests; known hidden dependencies remain possible.",
+    "No statistical guarantee on unseen pipelines or threat models."
+  ]
+}

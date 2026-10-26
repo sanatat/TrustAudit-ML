@@ -1,0 +1,20 @@
+# Python / local environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ruff_cache/
+# Local data, caches, and editor settings
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+*.log
+# Local artifacts
+checkpoints/
+*.pt
+*.pth
+*.pkl
