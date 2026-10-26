@@ -1,6 +1,6 @@
 # TrustAudit-ML
 
-**Change-aware ML assurance auditing — reproducible CPU-only feasibility study (Phases 1–7).**
+**Risk-aware ML assurance auditing, hidden dependency analysis, and evidence reuse — a reproducible research prototype.**
 
 This repository tests when prior machine-learning assessment evidence may be inappropriately reused after pipeline changes. It compares full reassessment with declared dependencies, a fail-closed policy, learned associations, and an uncertainty-aware threshold policy. **This is an exploratory pilot, not a validated security or safety solution.**
 
